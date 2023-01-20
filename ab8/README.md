@@ -4,7 +4,7 @@
 - Same as those revealed in the <a href="cit470/pentest" target="_blank" ref="noopener">Penetration Testing Exercise</a>.
 
 ## Requirements
-- After you and your team have accomplished *one* of the objectives that satisfies the Penetration Testing Exercise,
+- After you and your team have accomplished one of the objectives that satisfies the Penetration Testing Exercise,
 you may continue working, either individually or with other classmates, to accomplish *any of the other* Penetration Testing Exercise objectives.
 - Produce another illustrated tutorial that shows how you achieved your additional objective.
 (If you worked together with other classmates on this above-and-beyond task, each of you must write your own report.)
@@ -20,5 +20,5 @@ Upload an illustrated tutorial, in which you explain what you did and how you ac
 - If your tutorial does not satisfy any one of the above requirements, you will earn no points. Your team must then address any deficiencies and re-upload corrected documents until you earn the passing score.
 
 ## Hints
-- Complete your first objective in the Penetration Testing Exercise *before* you "go above and beyond" to tackle another objective.
+- Complete your first objective in the Penetration Testing Exercise **before** you "go above and beyond" to tackle another objective.
 - The same hints, for the <a href="cit470/pentest" target="_blank" ref="noopener">Penetration Testing Exercise</a> team task, also apply to this individual above-and-beyond task.
