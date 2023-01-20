@@ -17,9 +17,9 @@ VPN connection instructions:
 href="https://byui-cit.atlassian.net/wiki/spaces/CDI/pages/16351237/" target="_blank" ref="noopener">How to Install VPN Client for CIT Firewall</a>
 
 ### Required: Sign into CIT vSphere ###
-*Note: vSphere runs on a privately addressed server, so it is only available **after** you successfully engage your VPN conneciton.*
+**Note:** vSphere runs on a privately addressed server, so it is only available **after** you successfully engage your VPN conneciton.
 
-After connecting to the department's VPN service using GlobalProtect, use your BYU-I credentials to log into vSphere:
+After connecting to the department's VPN service using GlobalProtect, use your BYUI credentials to log into vSphere:
 <a href="https://vctr.c.cit.byui.edu/ui/" target="_blank" ref="noopener">https://vctr.c.cit.byui.edu/ui/</a>
 
 ## Quick tour of the CIT VMware Infrastructure, using the vSphere web interface ##
@@ -94,13 +94,13 @@ The "generic template" can be used to deploy either of these Linux variants.
 
 - AlmaLinux OS uses Red Hat Packages (.rpm files) for software distribution and `dnf` ("dandified") to manage software packages.
   - If you have experience with Red Hat style distributions,
-such as Red Hat Enterprise, Oracle Linux, CentOS, Fedora, Rocky, etc.
+such as Red Hat Enterprise, Oracle Linux, CentOS, Fedora, Rocky, and so on.
 then AlmaLinux will feel familiar.
 - Unbuntu Server uses Debian packages (.deb files) for software distribution and `apt` ("advanced package toolkit") for software package management.
   - If you have experience with Debian style distributions,
-such as Debian, Kali, Ubuntu, Raspberry Pi OS, Devuan, etc.
+such as Debian, Kali, Ubuntu, Raspberry Pi OS, Devuan, and so on.
 then Ubuntu Server will feel familiar.
 
 >Your team doesn't need to use both variants, but it's probably good for your career to maintain skills using both of the popular Linux software package formats.
-The *SELinux* (security enhanced Linux) activities in this course are designed for an AlmaLinux OS web server,
+The SELinux (security enhanced Linux) activities in this course are designed for an AlmaLinux OS web server,
 so it might be helpful for your team to deploy at least one AlmaLinux server as a DMZ endpoint.
