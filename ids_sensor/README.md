@@ -2,16 +2,16 @@
 - Configure a Network Intrusion Detection System (NIDS) sensor, managed from your secure zone, that monitors DMZ network traffic, and alerts when it notices potentially malicious traffic.
 
 ## Tools
-- Recommended: deploy a <a href="https://securityonionsolutions.com/" target="_blank" ref="noopener">Security Onion</a> sensor VM with two virtual interfaces: an analyst's *management* interface in your **secure** zone, and a promiscuous *sensor* interface in your **dmz**.
+- Recommended: deploy a <a href="https://securityonionsolutions.com/" target="_blank" ref="noopener">Security Onion</a> sensor VM with two virtual interfaces: an analyst's management interface in your **secure** zone, and a promiscuous sensor interface in your **dmz**.
   - Optional: not recommended, but if you prefer, you may also roll your own sensor, as follows:
-deploy a new Linux or Windows Server in your **secure** zone,
-add another virtual network interface in your **dmz** (intended to collect or *sniff* **dmz** network traffic as a *sensor*),
-download, install, and configure <a href="https://suricata.io/" target="_blank" ref="noopener">Suricata</a> or <a href="https://www.snort.org/" target="_blank" ref="noopener">Snort</a>, and implement a NIDS ruleset from a reputable threat-intelligence source, such as <a href="https://rules.emergingthreats.net/open/" target="_blank" ref="noopener">Emerging Threats Open Rules</a>.
+    - Feploy a new Linux or Windows Server in your **secure** zone
+    - Add another virtual network interface in your **dmz** (intended to collect or sniff **dmz** network traffic as a sensor)
+    - Download, install, and configure <a href="https://suricata.io/" target="_blank" ref="noopener">Suricata</a> or <a href="https://www.snort.org/" target="_blank" ref="noopener">Snort</a>, and implement a NIDS ruleset from a reputable threat-intelligence source, such as <a href="https://rules.emergingthreats.net/open/" target="_blank" ref="noopener">Emerging Threats Open Rules</a>.
 
 ## Requirements
 - Your team's NIDS sensor monitors all **dmz** network traffic
 - Your team's NIDS sensor produces alerts when it detects potentially malicious **dmz** network traffic
-- Your team has begun to *tune* your NIDS sensor, starting with the following modification:
+- Your team has begun to tune your NIDS sensor, starting with the following modification:
   - The periodic "health check" connections from your load balancer to your web servers each produce "false positive" alerts.
 Modify your ruleset so that your NIDS sensor does not alert when it detects these health check connections.
 
@@ -29,10 +29,10 @@ Upload an illustrated tutorial, in which you explain what your team did and how 
 These hints assume you will follow the recommendation to deploy a Security Onion VM.
 - Spend some time studying the <a href="https://docs.securityonion.net/" target="_blank" ref="noopener">Security Onion documentation</a>.
 Get acquainted with its architectures, its many components and its "containerized" organization.
-  - Do NOT deploy a Security Onion with a minimal IMPORT architecture.
+  - Do **not** deploy a Security Onion with a minimal import architecture.
 Although that's what the documentation's "First Time Users" section recommends,
-that configuration is, unfortunately, NOT suitable for your sensor.
-Instead, plan for an EVALUATION, or better yet, a STANDALONE architecture for your installation.
+that configuration is, unfortunately, **not** suitable for your sensor.
+Instead, plan for an evaluation, or better yet, a standalone architecture for your installation.
   - Heed the recommendations in the "Hardware Requirements" section.
 Your sensor will need a lot more CPU cores, RAM, and storage space than any of your other servers.
 If your selected architecture requires 4 CPU cores,
@@ -62,12 +62,12 @@ Just quickly skim through the suggestions you find there, to get a rough feel
 for some of the things Suricata on Security Onion can do, and some of the
 troubleshooting tips you might need to consult in case something doesn't work as expected.
   - You should not need to reconfigure Suricata; Security Onion's default configuration should work just fine.
-- *The power and effectiveness of any Suricata IDS sensor lies in its ruleset*.
+- The power and effectiveness of any Suricata IDS sensor lies in its ruleset.
   - Go to <a href="https://suricata.readthedocs.io/" target="_blank" ref="noopener">Suricata's online documentation</a>,
 find the "Suricata Rules" section and its "Rules Format" subsection,
 and study it carefully to become acquainted with the manner in which a
 Suricata-style or Snort-style "NIDS rule"
-(commonly called a *signature*) is organized.
+(commonly called a signature) is organized.
 Try to get comfortable enough with the syntax that, when you are presented
 with a new rule, you will be able to quickly distinguish its
 action, header, and options.
@@ -78,9 +78,9 @@ and study its "Managing Rules," "Adding Local Rules," and "Managing Alerts" subs
 the <a href="https://rules.emergingthreats.net/open/" target="_blank" ref="noopener">Emerging Threats Open</a> threat intelligence feed. 
   - In the "Adding Local Rules" subsection, find the example for adding a local
 rule to the ruleset.
-Do you recognize the action in that rule? *(Answer: it's an alert.)*
-Do you recognize the header in that rule? *(Answer: it's "ip any any -> any any.")*
-Do you recognize any options in that rule? *(Answer: there are five options: msg, content, classtype, sid, and rev.)*
+Do you recognize the action in that rule? (Answer: it's an alert.)
+Do you recognize the header in that rule? (Answer: it's "ip any any -> any any.")
+Do you recognize any options in that rule? (Answer: there are five options: msg, content, classtype, sid, and rev.)
   - Follow the instructions to try out that example local rule!
 The last step is to use the CLI web client `curl` to invoke a "practice" attack from <a href="http://testmynids.org/" target="_blank" ref="noopener">testmynids.org</a>.
 To see if it worked, switch to your Security Onion Console, select Alerts, and see if you notice an alert produced by this new rule.
