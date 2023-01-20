@@ -8,9 +8,9 @@ Configure an SNMP poller, managed from your secure zone, that monitors your Inte
 ## Requirements
 - Configure your Internet-facing firewall to accept SNMP poll requests from its secure-facing interface.
 - Configure an SNMP poller on a VM in your **secure** zone, to collect bandwith-usage data from your Internet-facing firewall.
-- Configure your secure-facing firewall to allow SNMP traffic *to and from* your poller and your Internet-facing firewall.
-- Set up reporting and management for your SNMP poller
-- To test your SNMP poller's reporting capability, produce high-bandwidth data transfers through your Inernet-facing firewall,
+- Configure your secure-facing firewall to allow SNMP traffic to and from your poller and your Internet-facing firewall.
+- Set up reporting and management for your SNMP poller.
+- To test your SNMP poller's reporting capability, produce high-bandwidth data transfers through your Internet-facing firewall,
 then produce a report from your poller that identifies the times during which the data transfer occurred.
 
 ## Deliverable
