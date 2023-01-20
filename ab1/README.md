@@ -20,13 +20,13 @@ in the <a href="https://byui-cit.github.io/cit470/firewalls/" target="_blank" re
 - GNS3 software components:
   - The GNS3 VM: <a href="https://www.gns3.com/software/download-vm" target="_blank" rel="noopener">https://www.gns3.com/software/download-vm</a> 
   - The GNS3 application: <a href="https://www.gns3.com/software/download" target="_blank" rel="noopener">https://www.gns3.com/software/download</a>
-    - *(If you are using an Intel-based Apple computer running macOS,
+    - (If you are using an Intel-based Apple computer running macOS,
 you will also need to download and install Royal TSX,
-then launch Royal TSX and install its VNC plugin component.)*
+then launch Royal TSX and install its VNC plugin component.)
 
-*If your computer isn't capable of satisfying all of these requirements, you should defer this project
+If your computer isn't capable of satisfying all of these requirements, you should defer this project
 and choose to work on different above-and-beyond opportunities. There are still enough opportunities to earn the
-grade you desire, so don't fret if you are unable to complete this GNS3 project.*
+grade you desire, so don't fret if you are unable to complete this GNS3 project.
 
 ## Requirements
 - Install the GNS3 VM, and verify that it has KVM support available.
