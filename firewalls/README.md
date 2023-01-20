@@ -15,8 +15,8 @@ VLAN-id, network address/subnet mask, and your outside router's IPv4 address.
 **2022/01/11 Update: our entire class section shares the same outside zone.**
     - IPv4 address of your Internet-facing firewall's outside "dynamic-NAT" interface.
     - IPv4 addresses of two publicly available DNS servers.
-*Examples: Cloudflare DNS (1.1.1.1, 1.0.0.1), Google DNS (8.8.8.8, 8.8.4.4), NeuStar Verisign (64.6.64.6, 64.6.65.6),
-<a href="https://www.allconnect.com/blog/best-free-dns-servers" target="_blank" ref="noopener">etc.</a>*
+Examples: Cloudflare DNS (1.1.1.1, 1.0.0.1), Google DNS (8.8.8.8, 8.8.4.4), NeuStar Verisign (64.6.64.6, 64.6.65.6),
+<a href="https://www.allconnect.com/blog/best-free-dns-servers" target="_blank" ref="noopener">etc.</a>
   - Your DMZ VLAN-id and network address/subnet mask.
     - IPv4 address of your Internet-facing firewall's DMZ interface. (This will be your team's DMZ default gateway address.)
     - IPv4 addresses of your DMZ Windows Server and Linux server VMs.
@@ -34,10 +34,10 @@ Your team's assigned VLAN IDs and public IPv4 addresses are listed
 <a href="https://byui-cit.atlassian.net/wiki/spaces/CDI/pages/28049411" target="_blank" ref="noopener">here</a>.
 
 ## Requirements
-*Summary: configure admministrator accounts, sub-interfaces, routing, policy rules, and NAT funcitonality on your Internet facing firewall,
+Summary: configure admministrator accounts, sub-interfaces, routing, policy rules, and NAT funcitonality on your Internet facing firewall,
 sufficient for your DMZ and inside servers to access the Internet and receive OS updates.
 Also, configure appropriate static routes and access policies on both firewalls,
-so that you can remotely access and administer your servers across zone boundaries.*
+so that you can remotely access and administer your servers across zone boundaries.
 
 - Manage your Internet-facing firewall using its OOB (out-of-band) management IP address. Log in with credentials provided by your instructor.
   - Configure a "Device Administrator" account for each team member. Then log out, and log in again with your own credentials.
