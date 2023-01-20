@@ -1,8 +1,8 @@
 ## Task: Tiered App
-Work with your team to deploy *Question2Answer* as a three-tiered web app,
-with a protected database *back-end* in your **secure** zone,
-users web browser *clients* in the **outside** zone,
-and the web server *middleware* in your **dmz**.
+Work with your team to deploy Question2Answer as a three-tiered web app,
+with a protected database back-end in your **secure** zone,
+users web browser clients in the **outside** zone,
+and the web server middleware in your **dmz**.
 Then clone your web server, so that you have two middleware servers,
 and deploy a load balancer in the **dmz** to leverage both web servers.
 The web server redundancy will improve your app's availability,
@@ -146,7 +146,7 @@ and notice that the content changes and/or the site icon changes color with each
 - To test your load balancer's ability to keep serving Question2Answer through service outages,
 use `systemctl` to start and stop the web service on a web server.
 
- - (Note: If you chose to deploy Question2Answer using Windows Servers instead of Linux,
+ - (**NOTE:** If you chose to deploy Question2Answer using Windows Servers instead of Linux,
 your recommended load-balancing solution
 is to deploy Microsoft's Network Load Balancing Server Role directly onto both web servers,
 which will then share a third "virtual" IP address that identifies a load balancing "cluster."
