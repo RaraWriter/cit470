@@ -35,18 +35,18 @@ Upload an illustrated tutorial, in which you explain what your team did and how 
 ## Hints
 - For this lab task, just keep your RADIUS configuration simple.
 Let your local user database be a plaintext configuration file that contains usernames and passwords.
-  - *(Note: in an enterprise deployment, a plaintext username/password data table would **not** be acceptable.
-Competent IT security professionals would look for a way to encrypt the username/password configuration, rather than just leave it in plaintext.
+  - **NOTE:** In an enterprise deployment, a plaintext username and password data table would **not** be acceptable.
+Competent IT security professionals would look for a way to encrypt the username and password configuration, rather than just leave it in plaintext.
 In fact, most professionals would instead configure the RADIUS server to act as a proxy to some other secure authentication service,
 such as a Microsoft Active Directory domain controller, or an LDAP authenticator, or a TACACS server.
-That way there would be no need to store confidential username/password credentials on the RADIUS server itself.)*
+That way there would be no need to store confidential username/password credentials on the RADIUS server itself.)
 - The current standard default ports for RADIUS protocol traffic are 1812/udp and 1813/udp.
 However, you may find RADIUS implementations that use the older legacy ports 1645/udp and 1646/udp.
 Make sure you know whether the RADIUS client on your firewall expects to use current or legacy ports for its RADIUS messages,
 and that you configure your secure-facing firewall and your RADIUS server to use the expected port numbers.
 - There is a `radius-test` command-line client you can use to test your RADIUS server; use it as a local troubleshooting tool.
-- *Note for those familiar with AAA jargon:
+- Note for those familiar with AAA jargon:
 In general, RADIUS servers don't differentiate between authentication ("AuthN") and authorization ("AuthZ").
-As far as RADIUS is concerned, a successful username/password both authenticates and authorizes.
+As far as RADIUS is concerned, a successful username and password both authenticates and authorizes.
 It's up to the RADIUS **client** (in this case, the Internet-facing firewall)
-to determine whether a properly authenticated user is authorized to use a service (in this case, the Remote-Access VPN service.*
+to determine whether a properly authenticated user is authorized to use a service (in this case, the Remote-Access VPN service.
