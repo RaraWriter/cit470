@@ -14,7 +14,7 @@ which securely enables network traffic between your DMZ and the other team's DMZ
 (The new account must belong to the "Remote Desktop Users" group.)
 - Create a new user account on your team's DMZ Linux server.
 
-Securely share the username/password credentials of these new accounts with the other team.
+Securely share the username and password credentials of these new accounts with the other team.
 
 For each of the requirements below, application traffic between DMZs must traverse
 a lan-to-lan (site-to-site) IPSec VPN tunnel.
