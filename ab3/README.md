@@ -12,7 +12,7 @@ Make certain that you have met the following requirements:
 
 ## Deliverable
 Upload an illustrated tutorial, in which you explain what your team did and how you accomplished it.
-- your document should be clear enough that one of your peers would be able to follow your instructions and accomplish the same tasks.
-- identify any difficult or challenging parts of the project, and clearly explain how you diagnosed and overcame your obstacles.
-- include a few cropped screen captures where appropriate.
+- Your document should be clear enough that one of your peers would be able to follow your instructions and accomplish the same tasks.
+- Identify any difficult or challenging parts of the project, and clearly explain how you diagnosed and overcame your obstacles.
+- Include a few cropped screen captures where appropriate.
 
