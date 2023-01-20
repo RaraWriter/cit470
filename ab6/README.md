@@ -7,11 +7,11 @@ Choose a HIDS platform.
 - Recommended: deploy an
 <a href="https://www.ossec.net/" target="_blank" ref="noopener">OSSEC</a>
 HIDS server on a **secure** zone Linux VM.
-- Other options:
-  - use the
+- Other options include the following:
+  - Use the
 <a href="https://wazuh.com/" target="_blank" ref="noopener">Wazuh</a>
 service already installed on your Security Onion VM.
-  - deploy a standalone Wazuh HIDS server on one of your other **secure** zone Linux VMs.
+  - Deploy a standalone Wazuh HIDS server on one of your other **secure** zone Linux VMs.
   - (There are other no-cost HIDS solutions.
 If you know of one and want to try it,
 message your instructor and ask if you can implement it for this task.)
@@ -24,7 +24,7 @@ message your instructor and ask if you can implement it for this task.)
 - Find a way to test your HIDS setup.
   - Example: make a dangerous registry or configuration change on an agent-registered VM, something that the agent should detect.
 Then verify that the agent sent an alert to the HIDS server.
-  - Example: (NOT recommended!) Find a mild malware specimen that the HIDS agent will detect, download it to your agent-registered VM, and "detonate" it (that is, execute the malware program). Then verify that the agent sent an alert to the HIDS server.
+  - Example: (**not** recommended!) Find a mild malware specimen that the HIDS agent will detect, download it to your agent-registered VM, and "detonate" it (that is, execute the malware program). Then verify that the agent sent an alert to the HIDS server.
 
 ## Deliverable
 Upload an illustrated tutorial, in which you explain what you did and how you accomplished it.
