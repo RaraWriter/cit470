@@ -1,6 +1,6 @@
 # Systems Security II
 ## Semester Project Tasks
-### "Table of Contents"
+### Table of Contents
 
 Outlined here are the course modules (or "course units"),
 with the **Team Tasks**, **Above and Beyond Opportunities**, and **Peer Evaluations** in each module.
